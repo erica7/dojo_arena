@@ -25,9 +25,6 @@ html{
     border: 6px solid #808080;
     border-radius: 10px;
 }
-.button {
-    padding: 10px;
-}
 ul li {
     display: inline-block;
     background-color: #FFF;
@@ -41,6 +38,9 @@ h1 {
     font-size: 30px;
     font-weight: normal;
     margin-bottom: 10px;
+}
+select {
+
 }
 /* Backgrounds
    ========================================================================== */

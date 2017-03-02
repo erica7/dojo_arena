@@ -9,7 +9,6 @@
             $(document).ready(function(){
                 console.log("JQuery is up and running");
 
-
                 $("li:nth-child(1)").hover(function() {
                     $("body" ).addClass( "bg_beach" );
                     console.log("added class");
@@ -52,6 +51,14 @@
                     $( "body" ).removeClass( "bg_snow" );
                     console.log("removed class");
                 });
+                
+                $( "li:nth-child(1)" ).click(function() {
+                    console.log("beach clicked");
+                    $( "li" ).hide();
+                    $("body" ).addClass( "bg_beach" );
+                    $( "h1" ).text( "Select Players" );
+                    $( "select" ).show();
+                });
             });
         </script>
     </head>
@@ -67,6 +74,18 @@
                     <li>matrix</li>
                     <li>snow</li>
                 </ul>
+                <select>
+                    <option value="p1_leo">Leonardo</option>
+                    <option value="p1_donny">Donatello</option>
+                    <option value="p1_mikey">Michelangelo</option>
+                    <option value="p1_raphael">Raphael</option>
+                </select>
+                <select>
+                    <option value="p2_leo">Leonardo</option>
+                    <option value="p2_donny">Donatello</option>
+                    <option value="p2_mikey">Michelangelo</option>
+                    <option value="p2_raphael">Raphael</option>
+                </select>
             </div>
         </div> <!-- end of wrapper -->
     </body>
