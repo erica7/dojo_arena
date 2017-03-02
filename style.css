@@ -13,6 +13,12 @@
 html{
     border: 5px solid #808080;
 }
+body {
+
+    background-image: url(images/black.png);
+    background-size: cover;
+    background-repeat: repeat;
+}
 /* Selector Box
    ========================================================================== */
 #select {
@@ -68,3 +74,9 @@ select {
     background-image: url(images/snow.jpg);
     background-size: cover;
 }
+.bg_black {
+    background-image: url(images/black.png);
+    background-size: cover;
+    background-repeat: repeat;
+}
+

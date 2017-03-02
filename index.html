@@ -8,85 +8,106 @@
         <script type="text/javascript">
             $(document).ready(function(){
                 console.log("JQuery is up and running");
+                $( "select" ).hide();
 
                 $("li:nth-child(1)").hover(function() {
-                    $("body" ).addClass( "bg_beach" );
+                    // $("body" ).addClass( "bg_beach" );
                     console.log("added class");
+                    // $("body" ).css( "backround-image", "url(images/beach.jpg)" );
+                    $("body" ).css({"background-image": "url(images/beach.jpg)"});
                 }, function() {
-                    $( "body" ).removeClass( "bg_beach" );
+                    // $( "body" ).removeClass( "bg_beach" );
                     console.log("removed class");
+                    // $("body" ).css( "backround-image","none" );
+                    $("body" ).css({"background-image": "url(images/black.png)"});
                 })
                 $("li:nth-child(2)").hover(function() {
-                    $("body" ).addClass( "bg_planet" );
+                    // $("body" ).addClass( "bg_planet" );
                     console.log("added class");
+                    $("body" ).css({"background-image": "url(images/earth.jpg)"});
                 }, function() {
-                    $( "body" ).removeClass( "bg_planet" );
+                    // $( "body" ).removeClass( "bg_planet" );
                     console.log("removed class");
+                    $("body" ).css({"background-image": "url(images/black.png)"});
                 })
                 $("li:nth-child(3)").hover(function() {
-                    $("body" ).addClass( "bg_dojo" );
+                    // $("body" ).addClass( "bg_dojo" );
                     console.log("added class");
+                    $("body" ).css({"background-image": "url(images/dojo.jpg)"});
                 }, function() {
-                    $( "body" ).removeClass( "bg_dojo" );
+                    // $( "body" ).removeClass( "bg_dojo" );
                     console.log("removed class");
+                    $("body" ).css({"background-image": "url(images/black.png)"});
                 });
                 $("li:nth-child(4)").hover(function() {
-                    $("body" ).addClass( "bg_forest" );
+                    // $("body" ).addClass( "bg_forest" );
                     console.log("added class");
+                    $("body" ).css({"background-image": "url(images/forest.jpg)"});
                 }, function() {
-                    $( "body" ).removeClass( "bg_forest" );
+                    // $( "body" ).removeClass( "bg_forest" );
                     console.log("removed class");
+                    $("body" ).css({"background-image": "url(images/black.png)"});
                 });
                 $("li:nth-child(5)").hover(function() {
-                    $("body" ).addClass( "bg_matrix" );
+                    // $("body" ).addClass( "bg_matrix" );
                     console.log("added class");
+                    $("body" ).css({"background-image": "url(images/matrix.jpg)"});
                 }, function() {
-                    $( "body" ).removeClass( "bg_matrix" );
+                    // $( "body" ).removeClass( "bg_matrix" );
                     console.log("removed class");
+                    $("body" ).css({"background-image": "url(images/black.png)"});
                 });
                 $("li:nth-child(6)").hover(function() {
-                    $("body" ).addClass( "bg_snow" );
+                    // $("body" ).addClass( "bg_snow" );
                     console.log("added class");
+                    $("body" ).css({"background-image": "url(images/snow.jpg)"});
                 }, function() {
-                    $( "body" ).removeClass( "bg_snow" );
+                    // $( "body" ).removeClass( "bg_snow" );
                     console.log("removed class");
+                    $("body" ).css({"background-image": "url(images/black.png)"});
                 });
                 
                 $( "li:nth-child(1)" ).click(function() {
                     console.log("beach clicked");
                     $( "li" ).hide();
                     $("body" ).addClass( "bg_beach" );
+                    // $("body" ).css({"background-image": "url(images/beach.jpg)"});
+                    console.log("added class!!!!!!!!!!!!!!!");
                     $( "h1" ).text( "Select Players" );
                     $( "select" ).show();
                 });
+
+                // $( "#ninja1" ).css("background-image", "url(images/)");
             });
         </script>
     </head>
     <body>
-        <div id="wrapper">
-            <div id="select">
-                <h1>Select Arena</h1>
-                <ul>
-                    <li>beach</li>
-                    <li>planet</li>
-                    <li>dojo</li>
-                    <li>forest</li>
-                    <li>matrix</li>
-                    <li>snow</li>
-                </ul>
-                <select>
-                    <option value="p1_leo">Leonardo</option>
-                    <option value="p1_donny">Donatello</option>
-                    <option value="p1_mikey">Michelangelo</option>
-                    <option value="p1_raphael">Raphael</option>
-                </select>
-                <select>
-                    <option value="p2_leo">Leonardo</option>
-                    <option value="p2_donny">Donatello</option>
-                    <option value="p2_mikey">Michelangelo</option>
-                    <option value="p2_raphael">Raphael</option>
-                </select>
-            </div>
-        </div> <!-- end of wrapper -->
+
+        <div id="select">
+            <h1>Select Arena</h1>
+            <ul>
+                <li>beach</li>
+                <li>planet</li>
+                <li>dojo</li>
+                <li>forest</li>
+                <li>matrix</li>
+                <li>snow</li>
+            </ul>
+            <select>
+                <option value="p1_leo">Leonardo</option>
+                <option value="p1_donny">Donatello</option>
+                <option value="p1_mikey">Michelangelo</option>
+                <option value="p1_raphael">Raphael</option>
+            </select>
+            <select>
+                <option value="p2_leo">Leonardo</option>
+                <option value="p2_donny">Donatello</option>
+                <option value="p2_mikey">Michelangelo</option>
+                <option value="p2_raphael">Raphael</option>
+            </select>
+        </div>
+        <div id="ninja1"></div>
+        <div id="ninja2"></div>
+
     </body>
 </html>
