@@ -1,0 +1,67 @@
+/* ==========================================================================
+   CSS Reset
+   ========================================================================== */
+* {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+/* ==========================================================================
+   Layout Styles
+   ========================================================================== */
+#wrapper {
+    border: 5px solid #808080;
+    height: 800px;
+    margin: auto;
+    width: 100%;
+}
+/* Selector Box
+   ========================================================================== */
+#select {
+    background-color: #A3A4A6;
+    display: block;
+    margin: 130px auto;
+    width: 330px;
+    text-align: center;
+    padding: 20px 0px;
+    border: 6px solid #808080;
+    border-radius: 10px;
+}
+.button {
+    padding: 10px;
+}
+ul li {
+    display: inline-block;
+    background-color: #FFF;
+    width: 90px;
+    padding: 10px 0px;
+    margin: 2px 1px;
+    border-radius: 5px;
+}
+h1 {
+    color: #ECA207;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+/* Backgrounds
+   ========================================================================== */
+.bg_beach {
+    background-image: url(images/beach.jpg);
+}
+.bg_dojo {
+    background-image: url(images/dojo.jpg);
+}
+.bg_planet {
+    background-image: url(images/earth.jpg);
+}
+.bg_forest {
+    background-image: url(images/forest.jpg);
+}
+.bg_matrix {
+    background-image: url(images/matrix.jpg);
+}
+.bg_snow {
+    background-image: url(images/snow.jpg);
+}
