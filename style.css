@@ -10,11 +10,8 @@
 /* ==========================================================================
    Layout Styles
    ========================================================================== */
-#wrapper {
+html{
     border: 5px solid #808080;
-    height: 800px;
-    margin: auto;
-    width: 100%;
 }
 /* Selector Box
    ========================================================================== */
@@ -49,19 +46,25 @@ h1 {
    ========================================================================== */
 .bg_beach {
     background-image: url(images/beach.jpg);
+    background-size: cover;
 }
 .bg_dojo {
     background-image: url(images/dojo.jpg);
+    background-size: cover;
 }
 .bg_planet {
     background-image: url(images/earth.jpg);
+    background-size: cover;
 }
 .bg_forest {
     background-image: url(images/forest.jpg);
+    background-size: cover;
 }
 .bg_matrix {
     background-image: url(images/matrix.jpg);
+    background-size: cover;
 }
 .bg_snow {
     background-image: url(images/snow.jpg);
+    background-size: cover;
 }

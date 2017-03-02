@@ -7,15 +7,51 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
-            console.log("JQuery is up and running");
-            });
-            
-            $("li:nth-child(1)").hover(function() {
-                $( "#wrapper" ).addClass( "bg_beach" );
-                console.log("added class");
-            }, function() {
-                $( "#wrapper" ).removeClass( "bg_beach" );
-                console.log("removed class");
+                console.log("JQuery is up and running");
+
+
+                $("li:nth-child(1)").hover(function() {
+                    $("body" ).addClass( "bg_beach" );
+                    console.log("added class");
+                }, function() {
+                    $( "body" ).removeClass( "bg_beach" );
+                    console.log("removed class");
+                })
+                $("li:nth-child(2)").hover(function() {
+                    $("body" ).addClass( "bg_planet" );
+                    console.log("added class");
+                }, function() {
+                    $( "body" ).removeClass( "bg_planet" );
+                    console.log("removed class");
+                })
+                $("li:nth-child(3)").hover(function() {
+                    $("body" ).addClass( "bg_dojo" );
+                    console.log("added class");
+                }, function() {
+                    $( "body" ).removeClass( "bg_dojo" );
+                    console.log("removed class");
+                });
+                $("li:nth-child(4)").hover(function() {
+                    $("body" ).addClass( "bg_forest" );
+                    console.log("added class");
+                }, function() {
+                    $( "body" ).removeClass( "bg_forest" );
+                    console.log("removed class");
+                });
+                $("li:nth-child(5)").hover(function() {
+                    $("body" ).addClass( "bg_matrix" );
+                    console.log("added class");
+                }, function() {
+                    $( "body" ).removeClass( "bg_matrix" );
+                    console.log("removed class");
+                });
+                $("li:nth-child(6)").hover(function() {
+                    $("body" ).addClass( "bg_snow" );
+                    console.log("added class");
+                }, function() {
+                    $( "body" ).removeClass( "bg_snow" );
+                    console.log("removed class");
+                });
             });
         </script>
     </head>
